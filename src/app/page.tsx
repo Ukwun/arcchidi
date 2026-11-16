@@ -140,7 +140,7 @@ export default function Home() {
   return (
     <main id="main-content">
       <section className={styles.hero} aria-labelledby="hero-title">
-        <div className={styles.heroCopy}>
+        <div className={styles.heroCopy} data-reveal>
           <p className={styles.eyebrow}>Architect-led design &amp; build · Nigeria</p>
           <h1 id="hero-title">Design a home you can actually afford to finish.</h1>
           <p className={styles.heroDescription}>
@@ -161,7 +161,7 @@ export default function Home() {
           </p>
         </div>
 
-        <figure className={styles.heroFigure}>
+        <figure className={styles.heroFigure} data-reveal>
           <Image
             src={featuredImage.src}
             alt={featuredImage.alt}
@@ -181,8 +181,13 @@ export default function Home() {
       </section>
 
       <section className={styles.proofStrip} aria-label="Practice at a glance">
-        {proofPoints.map((point) => (
-          <div className={styles.proofPoint} key={point.value}>
+        {proofPoints.map((point, index) => (
+          <div
+            className={styles.proofPoint}
+            data-reveal
+            data-reveal-delay={index}
+            key={point.value}
+          >
             <p className={styles.proofValue}>{point.value}</p>
             <p className={styles.proofDescription}>{point.description}</p>
           </div>
@@ -190,7 +195,7 @@ export default function Home() {
       </section>
 
       <section className={styles.challenge} aria-labelledby="challenge-title">
-        <div className={styles.challengeIntro}>
+        <div className={styles.challengeIntro} data-reveal>
           <p className={styles.eyebrow}>A clearer way to build</p>
           <h2 id="challenge-title">
             A beautiful design is only the beginning.
@@ -201,7 +206,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.challengeGrid}>
-          <article className={styles.challengeCard}>
+          <article className={styles.challengeCard} data-reveal data-reveal-delay="1">
             <span>01</span>
             <h3>Plan the cost before work starts</h3>
             <p>
@@ -209,7 +214,7 @@ export default function Home() {
               before you commit to construction.
             </p>
           </article>
-          <article className={styles.challengeCard}>
+          <article className={styles.challengeCard} data-reveal data-reveal-delay="2">
             <span>02</span>
             <h3>Keep design and delivery connected</h3>
             <p>
@@ -217,7 +222,7 @@ export default function Home() {
               are made with construction in mind.
             </p>
           </article>
-          <article className={styles.challengeCard}>
+          <article className={styles.challengeCard} data-reveal data-reveal-delay="3">
             <span>03</span>
             <h3>Stay informed from anywhere</h3>
             <p>
@@ -233,7 +238,7 @@ export default function Home() {
         id="services"
         aria-labelledby="services-title"
       >
-        <div className={styles.sectionHeading}>
+        <div className={styles.sectionHeading} data-reveal>
           <div>
             <p className={styles.eyebrow}>How we can help</p>
             <h2 id="services-title">The right support for your project.</h2>
@@ -245,8 +250,13 @@ export default function Home() {
         </div>
 
         <ul className={styles.serviceList}>
-          {services.map((service) => (
-            <li className={styles.serviceCard} key={service.number}>
+          {services.map((service, index) => (
+            <li
+              className={styles.serviceCard}
+              data-reveal
+              data-reveal-delay={index % 4}
+              key={service.number}
+            >
               <span className={styles.serviceNumber}>{service.number}</span>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -267,11 +277,13 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.packageGrid}>
-            {designPackages.map((packageItem) => (
+            {designPackages.map((packageItem, index) => (
               <article
                 className={`${styles.packageCard} ${
                   packageItem.featured ? styles.packageFeatured : ""
                 }`}
+                data-reveal
+                data-reveal-delay={index}
                 key={packageItem.name}
               >
                 {packageItem.featured && (
@@ -303,7 +315,7 @@ export default function Home() {
       </section>
 
       <section className={styles.smartHomes} aria-labelledby="smart-title">
-        <div className={styles.smartCopy}>
+        <div className={styles.smartCopy} data-reveal>
           <p className={styles.eyebrow}>Climate-responsive design</p>
           <h2 id="smart-title">Comfort first. Technology planned in.</h2>
           <p>
@@ -320,7 +332,7 @@ export default function Home() {
             Discuss your brief <span aria-hidden="true">↗</span>
           </a>
         </div>
-        <figure className={styles.smartImage}>
+        <figure className={styles.smartImage} data-reveal>
           <Image
             src="/images/vista-apartments.jpg"
             alt="Architectural visualization of Vista Apartments in Centenary City, Enugu"
@@ -339,7 +351,7 @@ export default function Home() {
         id="monitoring"
         aria-labelledby="monitoring-title"
       >
-        <div className={styles.monitoringIntro}>
+        <div className={styles.monitoringIntro} data-reveal>
           <p className={styles.eyebrow}>Building from abroad · Site monitoring</p>
           <h2 id="monitoring-title">
             Know what your money has built before you send more.
@@ -351,7 +363,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.sampleReport}>
+        <div className={styles.sampleReport} data-reveal>
           <div className={styles.reportHeading}>
             <div>
               <span className={styles.reportLabel}>
@@ -383,9 +395,11 @@ export default function Home() {
         </div>
 
         <div className={styles.monitoringPackages}>
-          {monitoringPackages.map((packageItem) => (
+          {monitoringPackages.map((packageItem, index) => (
             <article
               className={styles.monitoringCard}
+              data-reveal
+              data-reveal-delay={index}
               key={packageItem.name}
             >
               <p className={styles.monitoringPrice}>{packageItem.price}</p>
@@ -406,7 +420,7 @@ export default function Home() {
         id="projects"
         aria-labelledby="projects-title"
       >
-        <div className={styles.sectionHeading}>
+        <div className={styles.sectionHeading} data-reveal>
           <div>
             <p className={styles.eyebrow}>Selected projects</p>
             <h2 id="projects-title">
@@ -425,6 +439,7 @@ export default function Home() {
               featured={index === 0}
               key={project.slug}
               project={project}
+              revealDelay={index}
             />
           ))}
         </div>
@@ -435,13 +450,13 @@ export default function Home() {
         id="process"
         aria-labelledby="process-title"
       >
-        <div className={styles.processIntro}>
+        <div className={styles.processIntro} data-reveal>
           <p className={styles.eyebrow}>A straightforward process</p>
           <h2 id="process-title">A clear next step at every stage.</h2>
         </div>
         <ol className={styles.processList}>
-          {processSteps.map((step) => (
-            <li key={step.number}>
+          {processSteps.map((step, index) => (
+            <li data-reveal data-reveal-delay={index % 4} key={step.number}>
               <span>{step.number}</span>
               <h3>{step.title}</h3>
               <p>{step.description}</p>
@@ -451,7 +466,7 @@ export default function Home() {
       </section>
 
       <section className={styles.profile} id="about" aria-labelledby="about-title">
-        <figure className={styles.profileImage}>
+        <figure className={styles.profileImage} data-reveal>
           <Image
             src="/images/arc-chidi-ndubisi.jpg"
             alt="Architect Chidi Ndubisi"
@@ -459,7 +474,7 @@ export default function Home() {
             sizes="(min-width: 800px) 42vw, 100vw"
           />
         </figure>
-        <div className={styles.profileCopy}>
+        <div className={styles.profileCopy} data-reveal>
           <p className={styles.eyebrow}>Who leads your project</p>
           <h2 id="about-title">Arc. Chidi Ndubisi</h2>
           <p className={styles.profileIntro}>
@@ -485,7 +500,7 @@ export default function Home() {
         id="contact"
         aria-labelledby="contact-title"
       >
-        <div className={styles.enquiryIntro}>
+        <div className={styles.enquiryIntro} data-reveal>
           <p className={styles.eyebrow}>Start with a conversation</p>
           <h2 id="contact-title">Tell us a little about your project.</h2>
           <p>
@@ -510,6 +525,7 @@ export default function Home() {
           {...netlifyHoneypotAttributes}
           action="/thank-you"
           className={styles.enquiryForm}
+          data-reveal
           data-netlify="true"
           method="POST"
           name="project-enquiry"

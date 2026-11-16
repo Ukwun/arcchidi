@@ -80,7 +80,7 @@ async function ProjectPageContent({ params }: ProjectPageProps) {
       </nav>
 
       <section className={styles.projectHero} aria-labelledby="project-title">
-        <div className={styles.projectIntro}>
+        <div className={styles.projectIntro} data-reveal>
           <p className={styles.eyebrow}>
             {project.location} · {project.type}
           </p>
@@ -95,7 +95,7 @@ async function ProjectPageContent({ params }: ProjectPageProps) {
         </div>
 
         {heroImage && (
-          <figure className={styles.heroFigure}>
+          <figure className={styles.heroFigure} data-reveal>
             <Image
               src={heroImage.src}
               alt={heroImage.alt}
@@ -132,13 +132,13 @@ async function ProjectPageContent({ params }: ProjectPageProps) {
       </section>
 
       <section className={styles.gallery} aria-labelledby="gallery-title">
-        <div className={styles.galleryHeading}>
+        <div className={styles.galleryHeading} data-reveal>
           <p className={styles.eyebrow}>Project imagery</p>
           <h2 id="gallery-title">Design intent and project status.</h2>
         </div>
         <div className={styles.galleryGrid}>
           {project.images.map((image) => (
-            <figure className={styles.galleryItem} key={image.src}>
+            <figure className={styles.galleryItem} data-reveal key={image.src}>
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -153,7 +153,7 @@ async function ProjectPageContent({ params }: ProjectPageProps) {
       </section>
 
       <section className={styles.projectCta} aria-labelledby="project-cta-title">
-        <div>
+        <div data-reveal>
           <p className={styles.eyebrow}>Planning a residential project?</p>
           <h2 id="project-cta-title">
             Let&apos;s talk about what you want to build.

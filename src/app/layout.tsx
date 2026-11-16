@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { MotionEffects } from "@/components/MotionEffects";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -99,6 +100,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify(practiceStructuredData),
           }}
         />
+        <MotionEffects />
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>

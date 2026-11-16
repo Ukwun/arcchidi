@@ -25,6 +25,12 @@ npm run build
 Netlify's Next.js runtime. Keep its field names aligned with the visible form
 in `src/app/page.tsx`.
 
+## Motion
+
+Scroll reveals are progressive enhancements and respect the visitor's reduced
+motion preference. Keep page content visible when JavaScript or the observer
+API is unavailable.
+
 ## Project imagery and status
 
 Approved project images are stored in `public/images`. Use the shared project

@@ -6,13 +6,20 @@ import styles from "./ProjectCard.module.css";
 interface ProjectCardProps {
   project: Project;
   featured?: boolean;
+  revealDelay?: number;
 }
 
-export function ProjectCard({ project, featured = false }: ProjectCardProps) {
+export function ProjectCard({
+  project,
+  featured = false,
+  revealDelay = 0,
+}: ProjectCardProps) {
   return (
     <article
       className={`${styles.card} ${featured ? styles.featured : ""}`}
       data-project-status={project.status}
+      data-reveal
+      data-reveal-delay={revealDelay % 4}
     >
       <Link
         className={styles.cardLink}

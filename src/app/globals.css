@@ -177,6 +177,28 @@ figure {
   transition: color 160ms ease;
 }
 
+.desktop-nav a {
+  position: relative;
+}
+
+.desktop-nav a::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.45rem;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
 .desktop-nav a:hover,
 .mobile-nav a:hover,
 .footer-contact a:hover,
@@ -205,7 +227,10 @@ figure {
   transition:
     background-color 160ms ease,
     border-color 160ms ease,
-    color 160ms ease;
+    color 160ms ease,
+    box-shadow 180ms ease,
+    transform 180ms cubic-bezier(0.2, 0.65, 0.3, 1);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .button-primary {
@@ -214,7 +239,18 @@ figure {
 }
 
 .button-primary:hover {
+  box-shadow: 0 0.45rem 1rem rgba(32, 35, 33, 0.16);
   background: var(--color-red-hover);
+  transform: translateY(-2px);
+}
+
+.button-secondary:hover {
+  box-shadow: 0 0.35rem 0.8rem rgba(32, 35, 33, 0.1);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(1px) scale(0.975);
 }
 
 .button-secondary {
@@ -345,6 +381,43 @@ figure {
   margin-top: 1.5rem;
 }
 
+@keyframes menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-0.4rem) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+html[data-motion-ready="true"] [data-reveal] {
+  opacity: 0;
+  translate: 0 1.1rem;
+  transition:
+    opacity 650ms cubic-bezier(0.2, 0.65, 0.3, 1),
+    translate 650ms cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+html[data-motion-ready="true"] [data-reveal][data-revealed="true"] {
+  opacity: 1;
+  translate: 0 0;
+}
+
+[data-reveal-delay="1"] {
+  transition-delay: 70ms !important;
+}
+
+[data-reveal-delay="2"] {
+  transition-delay: 140ms !important;
+}
+
+[data-reveal-delay="3"] {
+  transition-delay: 210ms !important;
+}
+
 @media (max-width: 1000px) {
   .desktop-nav {
     display: none;
@@ -364,6 +437,11 @@ figure {
     font-size: 0.78rem;
     font-weight: 700;
     list-style: none;
+    transition: transform 160ms ease;
+  }
+
+  .mobile-menu summary:active {
+    transform: scale(0.96);
   }
 
   .mobile-menu summary::-webkit-details-marker {
@@ -389,6 +467,27 @@ figure {
     border-bottom: 1px solid var(--color-line);
     font-size: 0.9rem;
     font-weight: 600;
+    transition:
+      color 160ms ease,
+      padding-left 160ms ease;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a:focus-visible {
+    padding-left: 0.55rem;
+  }
+
+  .mobile-menu[open] .mobile-nav {
+    animation: menu-enter 180ms ease both;
+    transform-origin: top right;
+  }
+
+  .mobile-menu summary svg {
+    transition: transform 180ms ease;
+  }
+
+  .mobile-menu[open] summary svg {
+    transform: rotate(90deg);
   }
 
   .mobile-nav a:last-child {
@@ -505,5 +604,12 @@ figure {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  html[data-motion-ready="true"] [data-reveal],
+  html[data-motion-ready="true"] [data-reveal][data-revealed="true"] {
+    opacity: 1 !important;
+    translate: none !important;
+    transition: none !important;
   }
 }
