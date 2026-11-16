@@ -19,6 +19,12 @@ npm run lint
 npm run build
 ```
 
+## Netlify Forms
+
+`public/netlify-forms.html` registers the enquiry form and its fields with
+Netlify's Next.js runtime. Keep its field names aligned with the visible form
+in `src/app/page.tsx`.
+
 ## Project imagery and status
 
 Approved project images are stored in `public/images`. Use the shared project

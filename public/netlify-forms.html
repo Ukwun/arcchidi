@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <form
+      name="project-enquiry"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="project-enquiry" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="fullName" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <select name="residence">
+        <option value="Nigeria">In Nigeria</option>
+        <option value="Diaspora">In the diaspora</option>
+      </select>
+      <input type="text" name="siteLocation" />
+      <input type="text" name="buildingType" />
+      <select name="projectStage">
+        <option value="Land secured">I have land</option>
+        <option value="Need a design">I need a design</option>
+        <option value="Planning approval">I am working on approval</option>
+        <option value="Already building">I am already building</option>
+        <option value="Not sure">I am not sure yet</option>
+      </select>
+      <select name="serviceInterest">
+        <option value="Architectural design">Architectural design</option>
+        <option value="Building design">Building design</option>
+        <option value="Design-build">Design-build</option>
+        <option value="Project supervision">Project supervision</option>
+        <option value="Not sure">I am not sure yet</option>
+      </select>
+      <select name="budget">
+        <option value="Under ₦50M">Under ₦50M</option>
+        <option value="₦50M–₦150M">₦50M–₦150M</option>
+        <option value="₦150M–₦400M">₦150M–₦400M</option>
+        <option value="Above ₦400M">Above ₦400M</option>
+      </select>
+      <select name="timeline">
+        <option value="As soon as possible">As soon as possible</option>
+        <option value="Within 3 months">Within 3 months</option>
+        <option value="3–6 months">3–6 months</option>
+        <option value="6–12 months">6–12 months</option>
+        <option value="More than 12 months">More than 12 months</option>
+        <option value="Exploring">I am exploring options</option>
+      </select>
+      <textarea name="projectNotes"></textarea>
+      <input type="checkbox" name="contactConsent" value="yes" />
+    </form>
+  </body>
+</html>
