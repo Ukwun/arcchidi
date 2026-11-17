@@ -44,3 +44,11 @@ of a completed building.
 The supplied reference content was approved for use. Testimonials shown as
 placeholders in that reference are not published as testimonials. Add future
 projects and claims only when their details and image status are confirmed.
+
+## Production readiness
+
+See [docs/PRODUCTION_READINESS.md](docs/PRODUCTION_READINESS.md) for the
+current product assessment, verified capabilities, launch checklist, and the
+architecture required to evolve this public site into a real multi-user
+project workspace. The repository currently contains no authentication,
+database, client portal, or project activity system.
