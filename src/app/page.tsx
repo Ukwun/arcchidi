@@ -156,7 +156,7 @@ export default function Home() {
             </a>
           </div>
           <p className={styles.credentials}>
-            ARCON-registered architect (F/4711) · IPMP-certified project manager
+            ARCON-registered architect · IPMP-certified project manager
             · 14+ years in design-build practice
           </p>
         </div>
@@ -486,7 +486,7 @@ export default function Home() {
             attention to detail and a project manager&apos;s focus on delivery.
           </p>
           <ul className={styles.credentialsList}>
-            <li>ARCON-registered architect (F/4711)</li>
+            <li>ARCON-registered architect</li>
             <li>IPMP-certified project manager</li>
             <li>MSc Passive Solar Design, University of Nigeria (Enugu Campus)</li>
             <li>Assistant Lecturer, Department of Architecture, Federal University Lafia</li>

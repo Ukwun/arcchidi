@@ -131,7 +131,7 @@ export const projects: Project[] = [
     location: "Anambra",
     type: "5-bedroom duplex · design-build",
     status: "visualization",
-    statusLabel: "Design visualization",
+    statusLabel: "Design visualization · not built",
     summary: "Approx. ₦80M construction value",
     projectValue: "Approx. ₦80M",
     images: [

@@ -15,11 +15,11 @@ export function SiteFooter() {
           </Link>
           <p>Buildscope International Limited · RC 1116880</p>
           <address>
-            Plot 28, Behind NYSC Orientation Camp
+            Operating office: Plot 28, Behind NYSC Orientation Camp
             <br />
             Kubwa, Abuja, Nigeria
           </address>
-          <p>Architect of record: Arc. Chidi Ndubuisi · ARCON F/4711</p>
+          <p>Arc. Chidi Ndubuisi · ARCON-registered architect</p>
           <p>Smart home systems supplied by AGIS Ltd, a related company.</p>
         </div>
 
@@ -40,7 +40,7 @@ export function SiteFooter() {
       </div>
 
       <div className="footer-bottom">
-        <p>© Buildscope International Limited</p>
+        <p>© 2026 Buildscope International Limited</p>
         <a className="back-to-top" href="#top">
           Back to top <span aria-hidden="true">↑</span>
         </a>

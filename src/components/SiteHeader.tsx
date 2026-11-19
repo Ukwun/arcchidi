@@ -38,9 +38,17 @@ export function SiteHeader() {
           <div className="header-actions">
             <MobileMenu />
 
-            <Link className="button button-primary header-cta" href="/#contact">
-              <span className="long-label">Start a project enquiry</span>
-              <span className="short-label">Enquire</span>
+            <Link
+              aria-label="Start a project enquiry"
+              className="button button-primary header-cta"
+              href="/#contact"
+            >
+              <span aria-hidden="true" className="long-label">
+                Start a project enquiry
+              </span>
+              <span aria-hidden="true" className="short-label">
+                Enquire
+              </span>
             </Link>
           </div>
         </div>

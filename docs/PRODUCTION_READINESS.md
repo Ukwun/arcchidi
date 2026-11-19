@@ -84,6 +84,14 @@ unsupported 20–40% cost statistic are intentionally not published.
 9. **Cost claims:** never present an undated estimate as a guarantee. Every
    published cost plan needs a pricing date, assumptions, exclusions, and a
    change-notification process.
+10. **Credentials and offices:** publish the ARCON credential only as a
+    personal credential attached to the architect, never as a firm registration
+    claim, and do not publish the registration number. Keep the operating
+    address and phone number consistent across the website, proposals, and
+    invoices; label any separate registered office explicitly.
+11. **Time-sensitive pricing:** do not publish an old foreign-currency monthly
+    estimate without a dated exchange-rate basis. The v2 “about $170 per month”
+    figure remains intentionally unpublished.
 
 ## Recommended target architecture
 
