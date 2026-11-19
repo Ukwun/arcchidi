@@ -28,8 +28,8 @@ export const projects: Project[] = [
     type: "Mini estate · design-build",
     status: "in-progress",
     statusLabel: "In progress",
-    summary: "Approx. ₦1B construction value",
-    projectValue: "Approx. ₦1B",
+    summary: "Approx. ₦1B estate value",
+    projectValue: "Approx. ₦1B estate value",
     images: [
       {
         src: "/images/grand-villa-retreat.jpg",

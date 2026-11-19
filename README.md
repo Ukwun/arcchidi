@@ -1,6 +1,7 @@
-# Arc. Chidi Ndubuisi
+# Arc. Chidiebere Barnabas Ndubuisi
 
-A residential design-build portfolio for Arc. Chidi Ndubuisi, built with the
+A residential design-build portfolio for Arc. Chidiebere Barnabas Ndubuisi,
+built with the
 Next.js App Router, React, and TypeScript.
 
 ## Local development

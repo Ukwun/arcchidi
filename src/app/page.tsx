@@ -14,7 +14,7 @@ const proofPoints = [
   },
   {
     value: "₦40M–₦1B",
-    description: "Construction value per project",
+    description: "Reported project / estate values",
   },
   {
     value: "Abuja · Southeast",
@@ -476,7 +476,7 @@ export default function Home() {
         </figure>
         <div className={styles.profileCopy} data-reveal>
           <p className={styles.eyebrow}>Who leads your project</p>
-          <h2 id="about-title">Arc. Chidi Ndubuisi</h2>
+          <h2 id="about-title">Arc. Chidiebere Barnabas Ndubuisi</h2>
           <p className={styles.profileIntro}>
             Design decisions should make sense on the drawing board and on the
             building site. Chidi leads the practice with an architect&apos;s

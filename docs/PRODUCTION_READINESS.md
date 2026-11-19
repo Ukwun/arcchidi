@@ -5,7 +5,7 @@ Updated 19 November 2026.
 ## Executive conclusion
 
 This repository currently delivers a public, responsive architecture and
-design-build marketing site for Arc. Chidi Ndubuisi / Buildscope International
+design-build marketing site for Arc. Chidiebere Barnabas Ndubuisi / Buildscope International
 Limited. It is not yet the multi-user project-management product described in
 the latest brief.
 
@@ -78,6 +78,8 @@ authorized, project-scoped data.
    deploys, and a rollback plan.
 8. **Truthful content:** verify all credentials, address, phone/email routing,
    project values, dates, statuses, and image permissions before publishing.
+   Written client consent is a release gate for naming or showing Grand Villa
+   Retreat, Uzii, its images, location, or estate value.
 
 ## Recommended target architecture
 
