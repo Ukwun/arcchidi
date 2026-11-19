@@ -9,8 +9,8 @@ const proofPoints = [
     description: "Designing and building across Nigeria",
   },
   {
-    value: "8 projects",
-    description: "Delivered or in delivery as design-build",
+    value: `${projects.length} published projects`,
+    description: "Every currently published project is shown below",
   },
   {
     value: "₦40M–₦1B",
@@ -27,7 +27,7 @@ const services = [
     number: "01",
     title: "Design with cost clarity",
     description:
-      "Architectural drawings, coordinated consultants, a bill of quantities, and a phased cost plan shaped around your brief.",
+      "Architectural drawings, coordinated consultants, a dated cost plan with listed assumptions, and a scope shaped around your brief.",
   },
   {
     number: "02",
@@ -273,7 +273,8 @@ export default function Home() {
             </div>
             <p>
               Fees shown are for a typical duplex. Larger or commercial
-              projects are quoted after a project call.
+              projects are quoted after a project call, with assumptions and
+              pricing dates made clear.
             </p>
           </div>
           <div className={styles.packageGrid}>
@@ -308,8 +309,10 @@ export default function Home() {
           </div>
           <p className={styles.paymentNote}>
             Typical payment stages: 40% to start, 40% on approval of the
-            preliminary design, and 20% on final delivery. Scope and terms are
-            confirmed in your engagement agreement.
+            preliminary design, and 20% on final delivery. Cost plans are
+            priced at a stated date with assumptions listed; if an assumption
+            changes, you hear it from us before the next decision. Scope and
+            terms are confirmed in your engagement agreement.
           </p>
         </div>
       </section>
@@ -485,8 +488,8 @@ export default function Home() {
           <ul className={styles.credentialsList}>
             <li>ARCON-registered architect (F/4711)</li>
             <li>IPMP-certified project manager</li>
-            <li>MSc, Passive Solar Design, University of Nigeria, Nsukka</li>
-            <li>Lecturer in Architecture, Federal University Lafia</li>
+            <li>MSc Passive Solar Design, University of Nigeria (Enugu Campus)</li>
+            <li>Assistant Lecturer, Department of Architecture, Federal University Lafia</li>
             <li>14+ years in design-build practice</li>
           </ul>
           <p className={styles.profileQuote}>

@@ -43,8 +43,11 @@ of a completed building.
 ## Content
 
 The supplied reference content was approved for use. Testimonials shown as
-placeholders in that reference are not published as testimonials. Add future
-projects and claims only when their details and image status are confirmed.
+placeholders in that reference are not published as testimonials. The live
+site publishes only the five projects currently present in
+`src/data/projects.ts`; this is not a claim about the practice's complete
+project history. Add future projects and claims only when their details, role,
+image status, and approval are confirmed.
 
 ## Production readiness
 

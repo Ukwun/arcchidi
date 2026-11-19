@@ -51,7 +51,8 @@ analytics/observability pipeline.
 
 The sample monitoring report is explicitly illustrative marketing content. It
 must not be connected to a real client workflow without replacing it with
-authorized, project-scoped data.
+authorized, project-scoped data. The v2 testimonial placeholders and the
+unsupported 20–40% cost statistic are intentionally not published.
 
 ## Production risks to resolve
 
@@ -80,6 +81,9 @@ authorized, project-scoped data.
    project values, dates, statuses, and image permissions before publishing.
    Written client consent is a release gate for naming or showing Grand Villa
    Retreat, Uzii, its images, location, or estate value.
+9. **Cost claims:** never present an undated estimate as a guarantee. Every
+   published cost plan needs a pricing date, assumptions, exclusions, and a
+   change-notification process.
 
 ## Recommended target architecture
 
