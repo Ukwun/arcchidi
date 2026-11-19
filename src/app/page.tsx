@@ -262,6 +262,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.promises} aria-labelledby="promises-title">
+        <div className={styles.promisesIntro} data-reveal>
+          <p className={styles.eyebrow}>Why clients trust us with their money</p>
+          <h2 id="promises-title">Three promises that do not change when the money gets hard.</h2>
+        </div>
+        <div className={styles.promiseGrid}>
+          <article data-reveal data-reveal-delay="1">
+            <span>01</span>
+            <h3>We make the assumptions visible</h3>
+            <p>A cost plan is priced at a stated date, with assumptions and exclusions listed before you commit.</p>
+          </article>
+          <article data-reveal data-reveal-delay="2">
+            <span>02</span>
+            <h3>We inspect before we call it progress</h3>
+            <p>Money released, spending documented, work checked, and work observed stay separate in every monitoring report.</p>
+          </article>
+          <article data-reveal data-reveal-delay="3">
+            <span>03</span>
+            <h3>We keep design connected to delivery</h3>
+            <p>Decisions are made with the drawings, budget, site conditions, and next construction step in view.</p>
+          </article>
+        </div>
+      </section>
+
       <section
         className={styles.services}
         id="services"

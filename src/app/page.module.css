@@ -616,6 +616,71 @@
   line-height: 1.7;
 }
 
+.promises {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  width: min(100% - 2.5rem, var(--content-width));
+  margin-inline: auto;
+  padding: clamp(3rem, 6vw, 5rem);
+  color: var(--color-ivory);
+  background: var(--color-charcoal);
+}
+
+.promisesIntro {
+  max-width: 32rem;
+}
+
+.promises .eyebrow {
+  color: #e58b83;
+}
+
+.promisesIntro h2 {
+  margin-top: 0.85rem;
+  color: var(--color-ivory);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 4.2rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.promiseGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: center;
+  gap: 1rem;
+}
+
+.promiseGrid article {
+  padding-top: 1.1rem;
+  border-top: 3px solid var(--color-red);
+}
+
+.promiseGrid article > span {
+  color: #d6bd94;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.promiseGrid h3 {
+  margin-top: 1.2rem;
+  color: var(--color-ivory);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.promiseGrid p {
+  margin-top: 0.75rem;
+  color: rgba(245, 243, 238, 0.72);
+  font-size: 0.74rem;
+  line-height: 1.7;
+}
+
 .packages {
   margin-top: 4rem;
   padding-top: 3rem;
@@ -1284,6 +1349,11 @@
     gap: 2rem;
   }
 
+  .promises {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .challenge {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1335,6 +1405,20 @@
 
   .audienceCards {
     grid-template-columns: 1fr;
+  }
+
+  .promises {
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .promiseGrid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .promiseGrid article {
+    padding-block: 1.1rem;
   }
 
   .challenge,
