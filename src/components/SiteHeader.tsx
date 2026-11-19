@@ -22,9 +22,9 @@ export function SiteHeader() {
 
       <header className="site-header" id="top">
         <div className="header-inner">
-          <Link className="brand" href="/" aria-label="Arc. Chidi Ndubisi, home">
+          <Link className="brand" href="/" aria-label="Arc. Chidi Ndubuisi, home">
             <span className="brand-mark">Arc.</span>
-            <span className="brand-name">Chidi Ndubisi</span>
+            <span className="brand-name">Chidi Ndubuisi</span>
           </Link>
 
           <nav className="desktop-nav" aria-label="Main navigation">

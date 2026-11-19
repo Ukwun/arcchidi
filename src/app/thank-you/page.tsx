@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Enquiry received | Arc. Chidi Ndubisi",
+  title: "Enquiry received | Arc. Chidi Ndubuisi",
   ...(process.env.URL || process.env.NEXT_PUBLIC_SITE_URL
     ? { alternates: { canonical: "/thank-you" } }
     : {}),

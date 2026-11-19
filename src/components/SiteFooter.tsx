@@ -5,9 +5,9 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-identity">
-          <Link className="footer-brand" href="/" aria-label="Arc. Chidi Ndubisi, home">
+          <Link className="footer-brand" href="/" aria-label="Arc. Chidi Ndubuisi, home">
             <span className="brand-mark">Arc.</span>
-            <span className="brand-name">Chidi Ndubisi</span>
+            <span className="brand-name">Chidi Ndubuisi</span>
           </Link>
           <p>Buildscope International Limited · RC 1116880</p>
           <address>
@@ -15,7 +15,7 @@ export function SiteFooter() {
             <br />
             Kubwa, Abuja, Nigeria
           </address>
-          <p>Architect of record: Arc Chidi Ndubisi · ARCON F/4711</p>
+          <p>Architect of record: Arc Chidi Ndubuisi · ARCON F/4711</p>
         </div>
 
         <div className="footer-contact">
@@ -35,7 +35,7 @@ export function SiteFooter() {
       </div>
 
       <div className="footer-bottom">
-        <p>© Arc. Chidi Ndubisi</p>
+        <p>© Arc. Chidi Ndubuisi</p>
         <a className="back-to-top" href="#top">
           Back to top <span aria-hidden="true">↑</span>
         </a>

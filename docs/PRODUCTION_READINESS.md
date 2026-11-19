@@ -1,11 +1,11 @@
 # Arcchidi production-readiness assessment
 
-Updated 17 November 2026.
+Updated 19 November 2026.
 
 ## Executive conclusion
 
 This repository currently delivers a public, responsive architecture and
-design-build marketing site for Arc. Chidi Ndubisi / Buildscope International
+design-build marketing site for Arc. Chidi Ndubuisi / Buildscope International
 Limited. It is not yet the multi-user project-management product described in
 the latest brief.
 

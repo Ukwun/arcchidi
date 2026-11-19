@@ -13,7 +13,7 @@ const proofPoints = [
     description: "Delivered or in delivery as design-build",
   },
   {
-    value: "₦40M–₦600M",
+    value: "₦40M–₦1B",
     description: "Construction value per project",
   },
   {
@@ -174,7 +174,7 @@ export default function Home() {
             <span>Grand Villa Retreat, Uzii</span>
             <span>
               <span className={styles.captionStatus}>In progress</span>
-              Design visualization
+              Design-build project
             </span>
           </figcaption>
         </figure>
@@ -469,14 +469,14 @@ export default function Home() {
         <figure className={styles.profileImage} data-reveal>
           <Image
             src="/images/arc-chidi-ndubisi.jpg"
-            alt="Architect Chidi Ndubisi"
+            alt="Architect Chidi Ndubuisi"
             fill
             sizes="(min-width: 800px) 42vw, 100vw"
           />
         </figure>
         <div className={styles.profileCopy} data-reveal>
           <p className={styles.eyebrow}>Who leads your project</p>
-          <h2 id="about-title">Arc. Chidi Ndubisi</h2>
+          <h2 id="about-title">Arc. Chidi Ndubuisi</h2>
           <p className={styles.profileIntro}>
             Design decisions should make sense on the drawing board and on the
             building site. Chidi leads the practice with an architect&apos;s
@@ -517,7 +517,8 @@ export default function Home() {
           </a>
           <p className={styles.responseNote}>
             Enquiries are sent to Buildscope International Limited via Netlify
-            Forms. This is a public enquiry form, not a client account.
+            Forms. This is a public enquiry form, not a client account. Only
+            four details are required to get started.
           </p>
         </div>
 
@@ -578,9 +579,9 @@ export default function Home() {
             />
           </div>
           <div className={styles.formField}>
-            <label htmlFor="residence">Where do you live?</label>
+            <label htmlFor="residence">Where do you live? (optional)</label>
             <select defaultValue="" id="residence" name="residence">
-              <option value="">Select one</option>
+              <option value="">Choose if known</option>
               <option value="Nigeria">In Nigeria</option>
               <option value="Diaspora">In the diaspora</option>
             </select>
@@ -596,24 +597,22 @@ export default function Home() {
             />
           </div>
           <div className={styles.formField}>
-            <label htmlFor="building-type">Building type and size *</label>
+            <label htmlFor="building-type">Building type and size (optional)</label>
             <input
               id="building-type"
               name="buildingType"
               placeholder="For example, 4-bedroom duplex"
-              required
               type="text"
             />
           </div>
           <div className={styles.formField}>
-            <label htmlFor="project-stage">Where are you in the process? *</label>
+            <label htmlFor="project-stage">Where are you in the process? (optional)</label>
             <select
               defaultValue=""
               id="project-stage"
               name="projectStage"
-              required
             >
-              <option value="">Select your stage</option>
+              <option value="">Choose if known</option>
               <option value="Land secured">I have land</option>
               <option value="Need a design">I need a design</option>
               <option value="Planning approval">I am working on approval</option>
@@ -622,14 +621,13 @@ export default function Home() {
             </select>
           </div>
           <div className={styles.formField}>
-            <label htmlFor="service-interest">What support do you need? *</label>
+            <label htmlFor="service-interest">What support do you need? (optional)</label>
             <select
               defaultValue=""
               id="service-interest"
               name="serviceInterest"
-              required
             >
-              <option value="">Select a service</option>
+              <option value="">Choose if known</option>
               <option value="Architectural design">Architectural design</option>
               <option value="Building design">Building design</option>
               <option value="Design-build">Design-build</option>
@@ -640,7 +638,7 @@ export default function Home() {
           <div className={styles.formField}>
             <label htmlFor="budget">Budget range (optional)</label>
             <select defaultValue="" id="budget" name="budget">
-              <option value="">Prefer not to say</option>
+              <option value="">Choose if known</option>
               <option value="Under ₦50M">Under ₦50M</option>
               <option value="₦50M–₦150M">₦50M–₦150M</option>
               <option value="₦150M–₦400M">₦150M–₦400M</option>
@@ -648,9 +646,9 @@ export default function Home() {
             </select>
           </div>
           <div className={styles.formField}>
-            <label htmlFor="timeline">Expected timeline *</label>
-            <select defaultValue="" id="timeline" name="timeline" required>
-              <option value="">Select a timeline</option>
+            <label htmlFor="timeline">Expected timeline (optional)</label>
+            <select defaultValue="" id="timeline" name="timeline">
+              <option value="">Choose if known</option>
               <option value="As soon as possible">As soon as possible</option>
               <option value="Within 3 months">Within 3 months</option>
               <option value="3–6 months">3–6 months</option>

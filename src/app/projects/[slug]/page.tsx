@@ -19,18 +19,18 @@ export async function generateMetadata({ params }: ProjectPageProps) {
 
   if (!project) {
     return {
-      title: "Project not found | Arc. Chidi Ndubisi",
+      title: "Project not found | Arc. Chidi Ndubuisi",
     };
   }
 
   return {
-    title: `${project.name} | Arc. Chidi Ndubisi`,
+    title: `${project.name} | Arc. Chidi Ndubuisi`,
     description: `${project.type} in ${project.location}. ${project.statusLabel}. ${project.summary}.`,
     ...(process.env.URL || process.env.NEXT_PUBLIC_SITE_URL
       ? { alternates: { canonical: `/projects/${project.slug}` } }
       : {}),
     openGraph: {
-      title: `${project.name} | Arc. Chidi Ndubisi`,
+      title: `${project.name} | Arc. Chidi Ndubuisi`,
       description: `${project.type} in ${project.location}. ${project.statusLabel}.`,
       ...(process.env.URL || process.env.NEXT_PUBLIC_SITE_URL
         ? {
