@@ -56,3 +56,10 @@ current product assessment, verified capabilities, launch checklist, and the
 architecture required to evolve this public site into a real multi-user
 project workspace. The repository currently contains no authentication,
 database, client portal, or project activity system.
+
+## WhatsApp Cloud API webhook
+
+The server-only Meta webhook is documented in
+[docs/WHATSAPP_WEBHOOK.md](docs/WHATSAPP_WEBHOOK.md). It provides GET
+subscription verification and signed POST event ingestion with Firebase
+Firestore deduplication. It does not send automated replies.

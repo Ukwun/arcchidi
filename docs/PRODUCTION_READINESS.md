@@ -38,6 +38,9 @@ approvals, payments, and progress.
 - Desktop and mobile navigation, skip link, keyboard focus styles,
   reduced-motion handling, and scroll-reveal enhancements.
 - Netlify Forms registration and a thank-you route for public enquiries.
+- Server-only WhatsApp Cloud API webhook with Meta verification, raw-body
+  signature validation, Firestore event storage, and duplicate-delivery
+  protection. See `docs/WHATSAPP_WEBHOOK.md`.
 - Social/SEO metadata and structured data for the practice.
 - Custom not-found and route-error recovery UI.
 
