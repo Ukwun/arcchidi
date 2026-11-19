@@ -18,8 +18,10 @@ export default function EnquiryReceivedPage() {
       <p className="eyebrow">Thank you</p>
       <h1>Your project enquiry has been sent.</h1>
       <p>
-        The practice will review the details and get back to you. If you would
-        rather start a conversation now, you can message the team on WhatsApp.
+        The practice will review the details and reply within one working day.
+        Enquiries for projects above ₦150M are prioritised for same-day founder
+        review. If you would rather start a conversation now, message the team
+        on WhatsApp.
       </p>
       <div className="confirmation-actions">
         <a

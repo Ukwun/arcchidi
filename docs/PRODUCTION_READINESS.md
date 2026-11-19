@@ -123,11 +123,18 @@ entities so the activity history is explainable.
 
 - Confirm production domain, Netlify project, form notification recipient,
   spam handling, redirects, and HTTPS.
+- Configure Netlify form email alerts, the WhatsApp lead-routing workflow,
+  automatic acknowledgement, and a real booking URL before publishing the
+  same-day response promise. The repository cannot create those provider
+  connections without the owner’s accounts and credentials.
 - Verify every published claim, project status, image caption, price, and
   contact channel with the owner.
 - Run mobile/desktop browser checks, Lighthouse, link checks, and a real form
   submission in production.
 - Add privacy-conscious analytics and monitor form delivery.
+- Add the approved guide and monitoring-report downloads only when the files,
+  capture form, seven-day follow-up sequence, and unsubscribe handling are
+  connected to a real email system.
 
 ### Release 1 — secure foundation
 

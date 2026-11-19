@@ -105,6 +105,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Skip to content
         </a>
         <SiteHeader />
+        <a
+          className="mobile-whatsapp-fab"
+          href="https://wa.me/2347052702835"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with Buildscope on WhatsApp"
+        >
+          WhatsApp
+        </a>
         {children}
         <SiteFooter />
       </body>

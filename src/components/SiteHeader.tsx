@@ -2,10 +2,10 @@ import Link from "next/link";
 import { MobileMenu } from "@/components/MobileMenu";
 
 const navigation = [
-  { label: "Projects", href: "/#projects" },
-  { label: "Services", href: "/#services" },
-  { label: "How it works", href: "/#process" },
-  { label: "About", href: "/#about" },
+  { label: "Packages", href: "/#packages" },
+  { label: "Design-build", href: "/#services" },
+  { label: "For diaspora clients", href: "/#monitoring" },
+  { label: "Smart-ready homes", href: "/#smart-ready-homes" },
 ];
 
 export function SiteHeader() {

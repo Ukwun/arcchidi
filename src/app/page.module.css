@@ -475,6 +475,68 @@
   margin-inline: auto;
 }
 
+.audienceSection {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  width: min(100% - 2.5rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.audienceIntro {
+  max-width: 34rem;
+}
+
+.audienceIntro h2 {
+  margin-top: 0.85rem;
+  color: var(--color-charcoal);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 4.2rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.audienceIntro > p:last-child {
+  margin-top: 1.2rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.audienceCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: center;
+  gap: 1rem;
+}
+
+.audienceCards article {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--color-bronze);
+}
+
+.audienceCards h3 {
+  color: var(--color-charcoal);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.audienceCards p {
+  margin-top: 0.7rem;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.audienceCards .textLink {
+  margin-top: 1rem;
+}
+
 .challenge {
   display: grid;
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
@@ -689,6 +751,48 @@
   margin-top: auto;
   border-color: var(--color-charcoal);
   font-size: 0.72rem;
+}
+
+.quoteCard {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(245, 243, 238, 0.35);
+  color: var(--color-ivory);
+  background: rgba(245, 243, 238, 0.06);
+}
+
+.quoteCard .eyebrow {
+  color: #d6bd94;
+}
+
+.quoteCard h4 {
+  margin-top: -0.25rem;
+  color: var(--color-ivory);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.quoteCard > p:not(.eyebrow) {
+  color: rgba(245, 243, 238, 0.74);
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.quoteCard .button {
+  width: 100%;
+  border-color: var(--color-ivory);
+  color: var(--color-ivory);
+}
+
+.quoteCard .button:hover {
+  color: var(--color-charcoal);
+  background: var(--color-ivory);
 }
 
 .paymentNote {
@@ -1175,6 +1279,11 @@
 }
 
 @media (max-width: 1050px) {
+  .audienceSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .challenge {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1220,6 +1329,14 @@
 }
 
 @media (max-width: 700px) {
+  .audienceSection {
+    width: min(100% - 2rem, var(--content-width));
+  }
+
+  .audienceCards {
+    grid-template-columns: 1fr;
+  }
+
   .challenge,
   .smartHomes,
   .process,

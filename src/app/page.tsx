@@ -133,8 +133,11 @@ const processSteps = [
 const whatsappLink = "https://wa.me/2347052702835";
 const netlifyHoneypotAttributes = { "netlify-honeypot": "bot-field" };
 
-const featuredProject = projects[0];
-const featuredImage = featuredProject.images[0];
+const featuredProject =
+  projects.find((project) => project.slug === "crestwood") ?? projects[0];
+const featuredImage =
+  featuredProject.images.find((image) => image.label === "As built") ??
+  featuredProject.images[0];
 
 export default function Home() {
   return (
@@ -142,17 +145,19 @@ export default function Home() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <div className={styles.heroCopy} data-reveal>
           <p className={styles.eyebrow}>Architect-led design &amp; build · Nigeria</p>
-          <h1 id="hero-title">Design a home you can actually afford to finish.</h1>
+          <p className={styles.eyebrow}>For Nigerians building from abroad</p>
+          <h1 id="hero-title">Design a building you can actually afford to finish.</h1>
           <p className={styles.heroDescription}>
-            Thoughtful residential architecture, realistic cost planning, and
-            project oversight from first brief to work on site.
+            Stop paying for a building site you cannot see. Get realistic cost
+            planning, inspected progress, and one accountable team from first
+            brief to work on site.
           </p>
           <div className={styles.heroActions}>
             <a className="button button-primary" href="#contact">
               Tell us what you want to build
             </a>
-            <a className="button button-secondary" href="#projects">
-              Explore selected projects
+            <a className="button button-secondary" href="#monitoring">
+              Start with a ₦200,000 baseline assessment
             </a>
           </div>
           <p className={styles.credentials}>
@@ -171,10 +176,10 @@ export default function Home() {
             sizes="(min-width: 1000px) 50vw, 100vw"
           />
           <figcaption className={styles.heroCaption}>
-            <span>Grand Villa Retreat, Uzii</span>
+            <span>{featuredProject.name}, {featuredProject.location}</span>
             <span>
-              <span className={styles.captionStatus}>In progress</span>
-              Design-build project
+              <span className={styles.captionStatus}>{featuredProject.statusLabel}</span>
+              {featuredImage.label}
             </span>
           </figcaption>
         </figure>
@@ -192,6 +197,30 @@ export default function Home() {
             <p className={styles.proofDescription}>{point.description}</p>
           </div>
         ))}
+      </section>
+
+      <section className={styles.audienceSection} aria-labelledby="audience-title">
+        <div className={styles.audienceIntro} data-reveal>
+          <p className={styles.eyebrow}>For developers and lenders</p>
+          <h2 id="audience-title">Need a larger, repeatable view of delivery?</h2>
+          <p>
+            Estate teams, investor-backed builds, and lenders can start with a
+            focused conversation about scope, reporting, inspections, and the
+            evidence needed for the next decision.
+          </p>
+        </div>
+        <div className={styles.audienceCards}>
+          <article data-reveal data-reveal-delay="1">
+            <h3>Developers</h3>
+            <p>Coordinate design intent, cost visibility, and delivery reporting across a portfolio.</p>
+            <a className={styles.textLink} href="#contact">Discuss a development brief <span aria-hidden="true">↗</span></a>
+          </article>
+          <article data-reveal data-reveal-delay="2">
+            <h3>Lenders</h3>
+            <p>Establish an independent view of observed progress before the next drawdown.</p>
+            <a className={styles.textLink} href="#contact">Discuss monitoring support <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
       </section>
 
       <section className={styles.challenge} aria-labelledby="challenge-title">
@@ -288,7 +317,7 @@ export default function Home() {
                 key={packageItem.name}
               >
                 {packageItem.featured && (
-                  <span className={styles.packageBadge}>Build-ready</span>
+                  <span className={styles.packageBadge}>Most chosen</span>
                 )}
                 <h4>{packageItem.name}</h4>
                 <p className={styles.packageDescription}>
@@ -306,6 +335,17 @@ export default function Home() {
                 </a>
               </article>
             ))}
+            <article className={styles.quoteCard} data-reveal data-reveal-delay="3">
+              <p className={styles.eyebrow}>For larger builds</p>
+              <h4>Builds above ₦150M</h4>
+              <p>
+                Fee quoted after a project call, based on your scope, location,
+                delivery role, and reporting needs.
+              </p>
+              <a className="button button-secondary" href="#contact">
+                Discuss a larger build
+              </a>
+            </article>
           </div>
           <p className={styles.paymentNote}>
             Typical payment stages: 40% to start, 40% on approval of the
@@ -317,7 +357,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.smartHomes} aria-labelledby="smart-title">
+      <section
+        className={styles.smartHomes}
+        id="smart-ready-homes"
+        aria-labelledby="smart-title"
+      >
         <div className={styles.smartCopy} data-reveal>
           <p className={styles.eyebrow}>Climate-responsive design</p>
           <h2 id="smart-title">Comfort first. Technology planned in.</h2>
@@ -508,7 +552,8 @@ export default function Home() {
           <h2 id="contact-title">Tell us a little about your project.</h2>
           <p>
             Share a few details and the practice will follow up to discuss the
-            next step. If you prefer, message us directly on WhatsApp.
+            next step within one working day. If you prefer, message us directly
+            on WhatsApp.
           </p>
           <a
             className="button button-secondary"
@@ -521,7 +566,8 @@ export default function Home() {
           <p className={styles.responseNote}>
             Enquiries are sent to Buildscope International Limited via Netlify
             Forms. This is a public enquiry form, not a client account. Only
-            four details are required to get started.
+            four details are required to get started. If your project is above
+            ₦150M, say so in the budget field for priority founder review.
           </p>
         </div>
 
@@ -609,11 +655,12 @@ export default function Home() {
             />
           </div>
           <div className={styles.formField}>
-            <label htmlFor="project-stage">Where are you in the process? (optional)</label>
+            <label htmlFor="project-stage">Where are you in the process? *</label>
             <select
               defaultValue=""
               id="project-stage"
               name="projectStage"
+              required
             >
               <option value="">Choose if known</option>
               <option value="Land secured">I have land</option>
@@ -644,8 +691,7 @@ export default function Home() {
               <option value="">Choose if known</option>
               <option value="Under ₦50M">Under ₦50M</option>
               <option value="₦50M–₦150M">₦50M–₦150M</option>
-              <option value="₦150M–₦400M">₦150M–₦400M</option>
-              <option value="Above ₦400M">Above ₦400M</option>
+              <option value="Above ₦150M">Above ₦150M</option>
             </select>
           </div>
           <div className={styles.formField}>
