@@ -8,7 +8,7 @@ export function SiteFooter() {
           <Link
             className="footer-brand"
             href="/"
-            aria-label="Arc. Chidiebere Barnabas Ndubuisi, home"
+            aria-label="Arc. Chidi Ndubuisi, home"
           >
             <span className="brand-mark">Arc.</span>
             <span className="brand-name">Chidi Ndubuisi</span>

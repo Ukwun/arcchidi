@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Guide request received | Arc. Chidiebere Barnabas Ndubuisi",
+  title: "Guide request received | Arc. Chidi Ndubuisi",
   robots: { index: false, follow: true },
 };
 
