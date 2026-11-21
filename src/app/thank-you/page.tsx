@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   },
 };
 
+const bookingUrl = process.env.NEXT_PUBLIC_BOOKING_URL || "/#contact";
+
 export default function EnquiryReceivedPage() {
   return (
     <main className="site-confirmation" id="main-content">
@@ -26,6 +28,14 @@ export default function EnquiryReceivedPage() {
       <div className="confirmation-actions">
         <a
           className="button button-primary"
+          href={bookingUrl}
+          target={bookingUrl.startsWith("http") ? "_blank" : undefined}
+          rel={bookingUrl.startsWith("http") ? "noopener noreferrer" : undefined}
+        >
+          Book your call
+        </a>
+        <a
+          className="button button-secondary"
           href="https://wa.me/2347052702835"
           target="_blank"
           rel="noopener noreferrer"

@@ -31,7 +31,7 @@ export function ProjectCard({
             project.images.length === 1 ? styles.singleImage : ""
           }`}
         >
-          {project.images.map((image) => (
+          {project.images.length > 0 ? project.images.map((image) => (
             <figure className={styles.figure} key={image.src}>
               <Image
                 src={image.src}
@@ -45,7 +45,11 @@ export function ProjectCard({
               />
               <figcaption>{image.label}</figcaption>
             </figure>
-          ))}
+          )) : (
+            <div className={styles.imagePending}>
+              Approved project images will be added after delivery review.
+            </div>
+          )}
         </div>
 
         <div className={styles.cardDetails}>

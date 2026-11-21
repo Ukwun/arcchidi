@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
     openGraph: {
       title: `${project.name} | Arc. Chidi Ndubuisi`,
       description: `${project.type} in ${project.location}. ${project.statusLabel}.`,
-      ...(process.env.URL || process.env.NEXT_PUBLIC_SITE_URL
+      ...(project.images[0] && (process.env.URL || process.env.NEXT_PUBLIC_SITE_URL)
         ? {
             images: [
               {

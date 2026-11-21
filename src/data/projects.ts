@@ -144,7 +144,24 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: "verdencia-court",
+    name: "Verdencia Court",
+    location: "Mgbagbu-Owa, Enugu State",
+    type: "6-bedroom luxurious duplex",
+    status: "completed",
+    statusLabel: "Design and built pair pending approved images",
+    summary: "6-bedroom luxurious duplex",
+    projectValue: "Not published",
+    images: [],
+  },
 ];
+
+projects.sort((a, b) => {
+  if (a.slug === "magnolia-manor") return -1;
+  if (b.slug === "magnolia-manor") return 1;
+  return 0;
+});
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);

@@ -92,6 +92,7 @@ figure {
 }
 
 .announcement-bar {
+  display: none;
   color: var(--color-ivory);
   background: var(--color-charcoal);
   font-size: 0.77rem;

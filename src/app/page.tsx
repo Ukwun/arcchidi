@@ -126,7 +126,7 @@ const whatsappLink = "https://wa.me/2347052702835";
 const netlifyHoneypotAttributes = { "netlify-honeypot": "bot-field" };
 
 const featuredProject =
-  projects.find((project) => project.slug === "crestwood") ?? projects[0];
+  projects.find((project) => project.slug === "magnolia-manor") ?? projects[0];
 const featuredImage =
   featuredProject.images.find((image) => image.label === "As built") ??
   featuredProject.images[0];
@@ -137,7 +137,6 @@ export default function Home() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <div className={styles.heroCopy} data-reveal>
           <p className={styles.eyebrow}>Architect-led design &amp; build · Nigeria</p>
-          <p className={styles.eyebrow}>For Nigerians building from abroad</p>
           <h1 id="hero-title">Design a building you can actually afford to finish.</h1>
           <p className={styles.heroDescription}>
             Stop paying for a building site you cannot see. Get realistic cost
@@ -548,7 +547,6 @@ export default function Home() {
             attention to detail and a project manager&apos;s focus on delivery.
           </p>
           <ul className={styles.credentialsList}>
-            <li>ARCON-registered architect</li>
             <li>IPMP-certified project manager</li>
             <li>MSc Passive Solar Design, University of Nigeria (Enugu Campus)</li>
             <li>Academic staff, Department of Architecture, Federal University of Lafia</li>
@@ -675,7 +673,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.formField}>
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">Email address (optional)</label>
             <input
               autoComplete="email"
               id="email"
@@ -763,7 +761,7 @@ export default function Home() {
             </select>
           </div>
           <div className={`${styles.formField} ${styles.formFieldFull}`}>
-            <label htmlFor="project-notes">Anything else we should know?</label>
+            <label htmlFor="project-notes">Anything else we should know? (optional)</label>
             <textarea
               id="project-notes"
               name="projectNotes"

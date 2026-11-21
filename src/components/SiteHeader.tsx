@@ -11,15 +11,6 @@ const navigation = [
 export function SiteHeader() {
   return (
     <>
-      <div className="announcement-bar">
-        <div className="announcement-inner">
-          <p>Building in Nigeria from the diaspora?</p>
-          <Link href="/#monitoring">
-            See how site monitoring works <span aria-hidden="true">→</span>
-          </Link>
-        </div>
-      </div>
-
       <header className="site-header" id="top">
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="Arc. Chidi Ndubuisi, home">

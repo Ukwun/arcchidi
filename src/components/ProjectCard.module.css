@@ -19,6 +19,18 @@
   grid-template-columns: 1fr;
 }
 
+.imagePending {
+  display: grid;
+  min-height: 15rem;
+  padding: 2rem;
+  place-items: center;
+  color: var(--color-muted);
+  background: #e7e4dc;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .figure {
   position: relative;
   overflow: hidden;
