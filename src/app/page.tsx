@@ -149,7 +149,7 @@ export default function Home() {
               Tell us what you want to build
             </a>
             <a className="button button-secondary" href="#monitoring">
-              Start with a ₦200,000 baseline assessment
+              Get a Baseline Assessment
             </a>
           </div>
           <p className={styles.credentials}>
