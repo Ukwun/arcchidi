@@ -64,7 +64,7 @@
   padding: 0.28rem 0.48rem;
   color: var(--color-charcoal);
   background: rgba(245, 243, 238, 0.94);
-  font-size: 0.62rem;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -110,13 +110,13 @@
 .projectType {
   margin-top: 0.35rem;
   color: var(--color-ink);
-  font-size: 0.84rem;
+  font-size: 16px;
 }
 
 .summary {
   margin-top: 0.3rem;
-  color: var(--color-muted);
-  font-size: 0.78rem;
+  color: #3e434a;
+  font-size: 16px;
 }
 
 .cardLinkText {

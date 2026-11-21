@@ -10,8 +10,7 @@ export function SiteFooter() {
             href="/"
             aria-label="Arc. Chidi Ndubuisi, home"
           >
-            <span className="brand-mark">Arc.</span>
-            <span className="brand-name">Chidi Ndubuisi</span>
+            <span className="brand-name">BUILDSCOPE</span>
           </Link>
           <p>Buildscope International Limited · RC 1116880</p>
           <address>

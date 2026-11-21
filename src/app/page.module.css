@@ -1593,3 +1593,89 @@
     transform: none;
   }
 }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.heroDescription {
+  max-width: 560px;
+  color: #3e434a;
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.credentials {
+  color: #4a4f55;
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+
+.sectionHeading h2,
+.challenge h2,
+.smartCopy h2,
+.monitoringIntro h2,
+.processIntro h2,
+.profileCopy h2,
+.enquiryIntro h2,
+.guideCopy h2,
+.promisesIntro h2 {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3.4vw, 42px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.sectionHeading > p,
+.challengeIntro > p:last-child,
+.audienceIntro > p:last-child,
+.smartCopy > p:not(.eyebrow),
+.monitoringIntro > p:not(.eyebrow),
+.enquiryIntro > p:not(.eyebrow) {
+  max-width: 720px;
+  color: #3e434a;
+  font-family: var(--font-body);
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.challengeCard h3,
+.processList h3,
+.audienceCards h3,
+.promiseGrid h3,
+.packageCard h4,
+.quoteCard h4,
+.monitoringCard h3,
+.reportHeading h3 {
+  font-family: var(--font-display);
+  font-size: clamp(21px, 2vw, 24px);
+  font-weight: 600;
+}
+
+.heroCaption,
+.figure figcaption,
+.smartImage figcaption {
+  color: #4a4f55;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.packagePrice,
+.monitoringPrice,
+.reportMetrics strong,
+.reportForecast strong {
+  font-family: var(--font-display);
+}

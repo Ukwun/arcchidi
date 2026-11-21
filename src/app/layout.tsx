@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Archivo, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { MotionEffects } from "@/components/MotionEffects";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600", "700", "800"],
   display: "swap",
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -90,7 +90,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en-NG"
-      className={`${cormorant.variable} ${manrope.variable}`}
+      className={`${archivo.variable} ${sourceSans.variable}`}
       data-scroll-behavior="smooth"
     >
       <body>
