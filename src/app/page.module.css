@@ -446,6 +446,15 @@
   }
 }
 
+:global(*) {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+:global(.mobile-whatsapp-fab) {
+  box-shadow: 0 0.5rem 1.2rem rgba(22, 140, 75, 0.3) !important;
+}
+
 .hero h1,
 .practice h2,
 .sectionHeading h2,
@@ -1678,4 +1687,70 @@
 .reportMetrics strong,
 .reportForecast strong {
   font-family: var(--font-display);
+}
+
+.hero,
+.proofStrip,
+.practice,
+.services,
+.work,
+.audienceSection,
+.challenge,
+.smartHomes,
+.process,
+.profile,
+.guide,
+.enquiry,
+.promises,
+.monitoring {
+  width: min(100% - 48px, 1200px);
+  margin-inline: auto;
+  padding-block: 88px;
+}
+
+.hero {
+  padding-top: 72px;
+  padding-bottom: 56px;
+}
+
+.formField > label {
+  color: #16181b;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.formField input:not([type="checkbox"]),
+.formField select,
+.formField textarea {
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #8a8f96;
+  border-radius: 0;
+  background: #fff;
+}
+
+@media (max-width: 700px) {
+  .hero,
+  .proofStrip,
+  .practice,
+  .services,
+  .work,
+  .audienceSection,
+  .challenge,
+  .smartHomes,
+  .process,
+  .profile,
+  .guide,
+  .enquiry,
+  .promises,
+  .monitoring {
+    width: min(100% - 48px, 1200px);
+    padding-block: 56px;
+  }
+
+  .hero {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }

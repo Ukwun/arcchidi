@@ -2,16 +2,16 @@
   color-scheme: light;
   --color-charcoal: #16181b;
   --color-ivory: #f5f3ef;
-  --color-stone: #aaa69d;
+  --color-stone: #c9c4bc;
   --color-bronze: #a68a61;
   --color-red: #b3261e;
-  --color-red-hover: #951f19;
+  --color-red-hover: #8e1d17;
   --color-ink: #16181b;
   --color-muted: #4a4f55;
-  --color-line: rgba(22, 24, 27, 0.18);
+  --color-line: #dcd7cf;
   --font-display: var(--font-archivo), sans-serif;
   --font-body: var(--font-source-sans), sans-serif;
-  --content-width: 1440px;
+  --content-width: 1200px;
 }
 
 *,
@@ -753,4 +753,25 @@ html[data-motion-ready="true"] [data-reveal][data-revealed="true"] {
 .formField select,
 .formField textarea {
   font-size: 17px;
+}
+
+* {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.mobile-whatsapp-fab {
+  box-shadow: 0 0.5rem 1.2rem rgba(22, 140, 75, 0.3) !important;
+}
+
+.site-footer {
+  color: #c9c4bc;
+  background: #16181b;
+}
+
+.site-footer p,
+.site-footer address,
+.site-footer a,
+.footer-bottom {
+  color: #c9c4bc;
 }
