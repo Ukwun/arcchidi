@@ -3,7 +3,7 @@ import { MobileMenu } from "@/components/MobileMenu";
 
 const navigation = [
   { label: "Packages", href: "/#packages" },
-  { label: "Design-build", href: "/#services" },
+  { label: "Design-build", href: "/#design-build" },
   { label: "For diaspora clients", href: "/#monitoring" },
   { label: "Smart-ready homes", href: "/#smart-ready-homes" },
 ];

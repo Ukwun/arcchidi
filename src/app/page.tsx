@@ -9,14 +9,6 @@ const proofPoints = [
     description: "Designing and building across Nigeria",
   },
   {
-    value: `${projects.length} published projects`,
-    description: "Every currently published project is shown below",
-  },
-  {
-    value: "₦40M–₦1B",
-    description: "Reported project / estate values",
-  },
-  {
     value: "Abuja · Southeast",
     description: "Lafia, Enugu, Anambra, Imo, and Delta",
   },
@@ -227,33 +219,34 @@ export default function Home() {
         <div className={styles.challengeIntro} data-reveal>
           <p className={styles.eyebrow}>A clearer way to build</p>
           <h2 id="challenge-title">
-            A beautiful design is only the beginning.
+            Why so many buildings stall halfway.
           </h2>
           <p>
-            A home also needs a cost plan grounded in local conditions, clear
-            decisions, and someone checking what is happening on site.
+            The drawings may be beautiful, but a home still needs a cost plan
+            grounded in local conditions, clear decisions, and someone checking
+            what is happening on site.
           </p>
         </div>
         <div className={styles.challengeGrid}>
           <article className={styles.challengeCard} data-reveal data-reveal-delay="1">
             <span>01</span>
-            <h3>Plan the cost before work starts</h3>
+            <h3>Costs were never made clear</h3>
             <p>
-              Coordinated drawings and a phased cost plan make the scope clearer
-              before you commit to construction.
+              Coordinated drawings and a dated cost plan with assumptions make
+              the scope clearer before you commit to construction.
             </p>
           </article>
           <article className={styles.challengeCard} data-reveal data-reveal-delay="2">
             <span>02</span>
-            <h3>Keep design and delivery connected</h3>
+            <h3>Design and delivery drift apart</h3>
             <p>
               Architectural intent is easier to protect when design decisions
-              are made with construction in mind.
+              are made with construction and site conditions in mind.
             </p>
           </article>
           <article className={styles.challengeCard} data-reveal data-reveal-delay="3">
             <span>03</span>
-            <h3>Stay informed from anywhere</h3>
+            <h3>You cannot see what your money built</h3>
             <p>
               Site monitoring helps clients at home or in the diaspora
               understand observed progress before making the next decision.
@@ -288,7 +281,7 @@ export default function Home() {
 
       <section
         className={styles.services}
-        id="services"
+        id="design-build"
         aria-labelledby="services-title"
       >
         <div className={styles.sectionHeading} data-reveal>
@@ -499,8 +492,9 @@ export default function Home() {
             </h2>
           </div>
           <p>
-            We label project status and image type so you can distinguish
-            completed work from design imagery and sites in progress.
+            Design and built-photo pairs are labelled so you can distinguish
+            completed work from design imagery and sites in progress. A render
+            is never presented as a completed building.
           </p>
         </div>
 
@@ -539,7 +533,7 @@ export default function Home() {
       <section className={styles.profile} id="about" aria-labelledby="about-title">
         <figure className={styles.profileImage} data-reveal>
           <Image
-            src="/images/arc-chidi-ndubisi.jpg"
+            src="/images/ndubuisi.jpg"
             alt="Architect Chidi Ndubuisi"
             fill
             sizes="(min-width: 800px) 42vw, 100vw"
@@ -557,13 +551,51 @@ export default function Home() {
             <li>ARCON-registered architect</li>
             <li>IPMP-certified project manager</li>
             <li>MSc Passive Solar Design, University of Nigeria (Enugu Campus)</li>
-            <li>Assistant Lecturer, Department of Architecture, Federal University Lafia</li>
+            <li>Academic staff, Department of Architecture, Federal University of Lafia</li>
             <li>14+ years in design-build practice</li>
           </ul>
           <p className={styles.profileQuote}>
             “Design for execution, not just approval.”
           </p>
         </div>
+      </section>
+
+      <section className={styles.guide} id="guide" aria-labelledby="guide-title">
+        <div className={styles.guideCopy} data-reveal>
+          <p className={styles.eyebrow}>Free guide</p>
+          <h2 id="guide-title">Before you build: 10 cost mistakes that stall Nigerian buildings.</h2>
+          <p>
+            Get a practical checklist for spotting avoidable cost and delivery
+            problems before they become expensive. Leave your details and the
+            practice will send the guide to the contact you provide.
+          </p>
+        </div>
+        <form
+          action="/guide-thank-you"
+          className={styles.guideForm}
+          data-netlify="true"
+          method="POST"
+          name="guide-request"
+        >
+          <input type="hidden" name="form-name" value="guide-request" />
+          <input type="hidden" name="guide" value="before-you-build" />
+          <div className={styles.honeypot} aria-hidden="true">
+            <label htmlFor="guide-bot-field">
+              Leave this field empty
+              <input id="guide-bot-field" name="bot-field" tabIndex={-1} autoComplete="off" />
+            </label>
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="guide-name">Name</label>
+            <input id="guide-name" name="name" autoComplete="name" required />
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="guide-contact">Email or WhatsApp number</label>
+            <input id="guide-contact" name="contact" autoComplete="email tel" required />
+          </div>
+          <button className="button button-primary" type="submit">Request the guide</button>
+          <p className={styles.formPrivacy}>We will only use these details to send the requested guide and respond to your enquiry.</p>
+        </form>
       </section>
 
       <section
@@ -686,7 +718,7 @@ export default function Home() {
               name="projectStage"
               required
             >
-              <option value="">Choose if known</option>
+              <option value="">Choose your stage</option>
               <option value="Land secured">I have land</option>
               <option value="Need a design">I need a design</option>
               <option value="Planning approval">I am working on approval</option>

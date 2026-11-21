@@ -112,7 +112,7 @@
 
 .proofStrip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-block: 1px solid var(--color-line);
 }
 
@@ -535,6 +535,52 @@
 
 .audienceCards .textLink {
   margin-top: 1rem;
+}
+
+.guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+  width: min(100% - 2.5rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.guideCopy {
+  max-width: 42rem;
+}
+
+.guideCopy h2 {
+  margin-top: 0.85rem;
+  color: var(--color-charcoal);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4.7vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.guideCopy > p:last-child {
+  max-width: 38rem;
+  margin-top: 1.2rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.guideForm {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-line);
+  background: #fff;
+}
+
+.guideForm button {
+  width: 100%;
+  cursor: pointer;
 }
 
 .challenge {
@@ -1354,6 +1400,11 @@
     gap: 2rem;
   }
 
+  .guide {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .challenge {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1410,6 +1461,11 @@
   .promises {
     width: 100%;
     padding: 3rem 1rem;
+  }
+
+  .guide {
+    width: min(100% - 2rem, var(--content-width));
+    padding-block: 4rem;
   }
 
   .promiseGrid {

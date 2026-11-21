@@ -19,7 +19,7 @@ export function SiteFooter() {
             <br />
             Kubwa, Abuja, Nigeria
           </address>
-          <p>Arc. Chidi Ndubuisi · ARCON-registered architect</p>
+          <p>Architect of record: Arc. Chidi Ndubuisi</p>
           <p>Smart home systems supplied by AGIS Ltd, a related company.</p>
         </div>
 
