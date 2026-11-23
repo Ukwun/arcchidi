@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function SiteFooter() {
   return (
@@ -10,7 +11,13 @@ export function SiteFooter() {
             href="/"
             aria-label="Arc. Chidi Ndubuisi, home"
           >
-            <span className="brand-name">BUILDSCOPE</span>
+            <Image
+              className="footer-logo"
+              src="/images/buildscope-logo.png"
+              alt="Buildscope — Smarter Design, Quality Build"
+              width={457}
+              height={349}
+            />
           </Link>
           <p>Buildscope International Limited · RC 1116880</p>
           <address>

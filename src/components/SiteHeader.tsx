@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MobileMenu } from "@/components/MobileMenu";
 
 const navigation = [
@@ -14,7 +15,14 @@ export function SiteHeader() {
       <header className="site-header" id="top">
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="Arc. Chidi Ndubuisi, home">
-          <span className="brand-name">BUILDSCOPE</span>
+          <Image
+            className="brand-logo"
+            src="/images/buildscope-logo.png"
+            alt="Buildscope — Smarter Design, Quality Build"
+            width={457}
+            height={349}
+            priority
+          />
           </Link>
 
           <nav className="desktop-nav" aria-label="Main navigation">
