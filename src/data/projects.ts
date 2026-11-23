@@ -149,11 +149,26 @@ export const projects: Project[] = [
     name: "Verdencia Court",
     location: "Mgbagbu-Owa, Enugu State",
     type: "6-bedroom luxurious duplex",
-    status: "completed",
-    statusLabel: "Design and built pair pending approved images",
+    status: "in-progress",
+    statusLabel: "Under construction",
     summary: "6-bedroom luxurious duplex",
     projectValue: "Not published",
-    images: [],
+    images: [
+      {
+        src: "/images/verdencia-court-design.jpg",
+        alt: "Verdencia Court 6-bedroom luxurious duplex design visualization",
+        width: 1080,
+        height: 830,
+        label: "Design visualization",
+      },
+      {
+        src: "/images/verdencia-court-construction.jpg",
+        alt: "Verdencia Court 6-bedroom luxurious duplex under construction",
+        width: 1080,
+        height: 607,
+        label: "Under construction",
+      },
+    ],
   },
 ];
 
