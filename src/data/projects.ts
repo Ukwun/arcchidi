@@ -130,8 +130,8 @@ export const projects: Project[] = [
     name: "Elaris Grove",
     location: "Anambra",
     type: "5-bedroom duplex · design-build",
-    status: "completed",
-    statusLabel: "Design visualization · not built",
+    status: "visualization",
+    statusLabel: "Design visualization",
     summary: "Approx. ₦80M construction value",
     projectValue: "Approx. ₦80M",
     images: [

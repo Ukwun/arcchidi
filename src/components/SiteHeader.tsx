@@ -12,6 +12,14 @@ const navigation = [
 export function SiteHeader() {
   return (
     <>
+      <div className="announcement-bar">
+        <div className="announcement-inner">
+          <span>In the diaspora and building at home?</span>
+          <Link href="/#monitoring">
+            See how we watch your site for you <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </div>
       <header className="site-header" id="top">
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="Arc. Chidi Ndubuisi, home">

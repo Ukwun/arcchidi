@@ -95,21 +95,22 @@ figure {
 }
 
 .announcement-bar {
-  display: none;
+  display: block;
   color: var(--color-ivory);
   background: var(--color-charcoal);
-  font-size: 0.77rem;
+  font-size: 15px;
   font-weight: 600;
 }
 
 .announcement-inner {
   display: flex;
-  min-height: 2.8rem;
+  min-height: 0;
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
   width: min(100% - 2.5rem, var(--content-width));
   margin-inline: auto;
+  padding-block: 10px;
   text-align: center;
 }
 
