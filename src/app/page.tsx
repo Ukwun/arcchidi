@@ -618,8 +618,6 @@ export default function Home() {
             Chat on WhatsApp <span aria-hidden="true">↗</span>
           </a>
           <p className={styles.responseNote}>
-            Enquiries are sent to Buildscope International Limited via Netlify
-            Forms. This is a public enquiry form, not a client account. Only
             four details are required to get started. If your project is above
             ₦150M, say so in the budget field for priority founder review.
           </p>
