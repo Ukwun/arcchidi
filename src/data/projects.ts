@@ -149,8 +149,8 @@ export const projects: Project[] = [
     name: "Verdencia Court",
     location: "Mgbagbu-Owa, Enugu State",
     type: "6-bedroom luxurious duplex",
-    status: "completed",
-    statusLabel: "Completed",
+    status: "in-progress",
+    statusLabel: "Under construction",
     summary: "6-bedroom luxurious duplex",
     projectValue: "Not published",
     images: [
@@ -177,11 +177,6 @@ projects.sort((a, b) => {
   if (b.slug === "magnolia-manor") return 1;
   return 0;
 });
-
-const elarisGrove = projects.find((project) => project.slug === "elaris-grove");
-if (elarisGrove) {
-  elarisGrove.statusLabel = "Completed";
-}
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);

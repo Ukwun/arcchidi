@@ -54,16 +54,16 @@ const practiceStructuredData = {
 };
 
 export const metadata: Metadata = {
-  title: "Arc. Chidi Ndubuisi | Architect-Led Design & Build in Nigeria",
+  title: "Buildscope | Architect-Led Design & Build in Nigeria",
   description:
     "Architect-led residential design and build in Nigeria, with project supervision, clear costs, and completed work you can see.",
   ...(metadataBase ? { metadataBase } : {}),
   alternates: metadataBase ? { canonical: "/" } : undefined,
   openGraph: {
-    title: "Arc. Chidi Ndubuisi | Architect-Led Design & Build in Nigeria",
+    title: "Buildscope | Architect-Led Design & Build in Nigeria",
     description:
       "Architect-led residential design and build in Nigeria, with project supervision and a clear view of project delivery.",
-    siteName: "Arc. Chidi Ndubuisi",
+    siteName: "Buildscope",
     locale: "en_NG",
     type: "website",
     ...(metadataBase
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arc. Chidi Ndubuisi | Architect-Led Design & Build in Nigeria",
+    title: "Buildscope | Architect-Led Design & Build in Nigeria",
     description:
       "Architect-led residential design and build in Nigeria, with project supervision and a clear view of project delivery.",
     ...(metadataBase ? { images: ["/images/grand-villa-retreat.jpg"] } : {}),

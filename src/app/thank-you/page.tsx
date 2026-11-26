@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Enquiry received | Arc. Chidi Ndubuisi",
+  title: "Thank you | Buildscope",
   ...(process.env.URL || process.env.NEXT_PUBLIC_SITE_URL
     ? { alternates: { canonical: "/thank-you" } }
     : {}),
@@ -20,10 +20,8 @@ export default function EnquiryReceivedPage() {
       <p className="eyebrow">Thank you</p>
       <h1>Your project enquiry has been sent.</h1>
       <p>
-        The practice will review the details and reply within one working day.
-        Enquiries for projects above ₦150M are prioritised for same-day founder
-        review. If you would rather start a conversation now, message the team
-        on WhatsApp.
+        Thank you. We have your enquiry. We reply within one working day to fix
+        a time for your free 20-minute call.
       </p>
       <div className="confirmation-actions">
         <a
